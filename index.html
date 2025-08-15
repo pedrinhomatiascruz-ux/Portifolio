@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Pedro</title>
+    <style>
+        /* Resetando estilos padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF6F61, #D7A2FF);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 25px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FF6F61;
+        }
+
+        section {
+            padding: 100px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .about {
+            background: #222;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        .projects {
+            background: #333;
+        }
+
+        .projects h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .projects ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .projects li {
+            background: #444;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects li:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects li h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #FF6F61;
+        }
+
+        .contact {
+            background: #222;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #D7A2FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 30px;
+            font-size: 1.2em;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        /* Animações */
+        .fadeIn {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Adicionando media query para dispositivos móveis */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 15px;
+            }
+
+            .projects ul {
+                grid-template-columns: 1fr;
+            }
+
+            .projects li {
+                padding: 15px;
+            }
+
+            .about p, .contact p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="fadeIn">
+        <h1>Pedro</h1>
+        <p>Formado em Audiovisual</p>
+        <p>Transformando ideias em experiências visuais incríveis</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">Sobre Mim</a>
+    <a href="#projects">Projetos</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="about" class="about fadeIn">
+    <div>
+        <h2>Sobre Mim</h2>
+        <p>Olá, sou Pedro, um apaixonado por contar histórias através da imagem e som. Com minha formação em Audiovisual, desenvolvo projetos que buscam não só entreter, mas também provocar reflexões e emoções. Minha experiência vai desde a produção de vídeos curtos até grandes produções cinematográficas, sempre com o objetivo de entregar qualidade e criatividade.</p>
+    </div>
+</section>
+
+<section id="projects" class="projects fadeIn">
+    <div>
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <h3>Curta-metragem "Reflexos"</h3>
+                <p>Uma jornada emocionante sobre as escolhas que definem nossas vidas.</p>
+            </li>
+            <li>
+                <h3>Vídeo Institucional - "Inovação em Ação"</h3>
+                <p>Produção de vídeo para uma empresa focada em inovação tecnológica.</p>
+            </li>
+            <li>
+                <h3>Documentário "Caminhos do Sertão"</h3>
+                <p>Uma obra que explora as tradições e desafios da vida no sertão nordestino.</p>
+            </li>
+            <li>
+                <h3>Promoção "Festival da Música"</h3>
+                <p>Vídeo promocional para o maior evento de música do estado.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="contact fadeIn">
+    <div>
+        <h2>Contato</h2>
+        <p>Se você está interessado em colaborar em um projeto ou deseja saber mais sobre o meu trabalho, entre em contato!</p>
+        <p>Email: <a href="mailto:pedrofernandomatiascruz@email.com">pedrofernandomatiascruz@email.com</a></p>
+        <p>Telefone: (11) 953870073</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Pedro - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
